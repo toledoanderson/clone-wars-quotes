@@ -1,16 +1,20 @@
-# clone_wars_quotes
+# Clone Wars Quotes
+![alt text: Banner with a Clone Trooper helmet logo, app name: 'Clone Wars Quotes' and slogan: 'The most inspiring quotes in the galaxy'.] (/images/banner.png)
 
-A new Flutter project.
+Inspiring quotes for Star Wars & Clone Wars fans!
 
-## Getting Started
+## Why?
+This is a project developed to learn in practice the Flutter framework.
 
-This project is a starting point for a Flutter application.
+## Who?
+I am not a developer. 
+This is my first try to make an app using Flutter - or any kind of code. 
 
-A few resources to get you started if this is your first Flutter project:
+## Content used in the app
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Quotes:
+[Clone Wars Opening Quotes That Will Help You Think Like A Jedi](https://medium.com/illumination/clone-wars-opening-quotes-that-will-help-you-think-like-a-jedi-64d0300653b3) 
+Medium.com/@naacel
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Logo:
+A modified version of the Clone Trooper Icon available at [Vectorified.com](https://vectorified.com/clone-trooper-icon)
