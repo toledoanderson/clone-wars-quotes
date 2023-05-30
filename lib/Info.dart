@@ -15,9 +15,8 @@ class _InfoState extends State<Info> {
       appBar: AppBar(
         title: const Text(
           "Information",
-          textScaleFactor: 1.15,
           style: TextStyle(
-            fontWeight: FontWeight.normal,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),

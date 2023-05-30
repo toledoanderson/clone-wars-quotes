@@ -10,6 +10,12 @@ This is a project developed to learn in practice the Flutter framework.
 I am not a developer. 
 This is my first try to make an app using Flutter - or any kind of code. 
 
+## Screenshots
+(/images/screenshot_1.png)
+(/images/screenshot_2.png)
+(/images/screenshot_3.png)
+
+
 ## Content used in the app
 
 ### Quotes:

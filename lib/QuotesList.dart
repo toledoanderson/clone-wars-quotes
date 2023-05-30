@@ -147,9 +147,8 @@ class _AllQuotesState extends State<AllQuotes> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('All Quotes',
-          textScaleFactor: 1.15,
           style: TextStyle(
-            fontWeight: FontWeight.normal,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),

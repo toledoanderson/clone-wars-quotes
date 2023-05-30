@@ -168,6 +168,13 @@ class _QuotesState extends State<Quotes> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Clone Wars Quotes',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
       body: PageView.builder(
           onPageChanged: (random) {
             randomQuote();
