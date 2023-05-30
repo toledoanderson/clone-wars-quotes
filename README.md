@@ -1,5 +1,5 @@
 # Clone Wars Quotes
-![alt text: Banner with a Clone Trooper helmet logo, app name: 'Clone Wars Quotes' and slogan: 'The most inspiring quotes in the galaxy'.] (/images/banner.png)
+![alt text: Banner with a Clone Trooper helmet logo, app name: 'Clone Wars Quotes' and slogan: 'The most inspiring quotes in the galaxy'.](/images/banner.png)
 
 Inspiring quotes for Star Wars & Clone Wars fans!
 
