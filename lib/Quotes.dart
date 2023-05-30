@@ -141,7 +141,7 @@ class _QuotesState extends State<Quotes> {
     "You can change who you are, but you cannot run from yourself.",
   ];
   String showQuote = '';
-  List<String> favoritesQuotes = [];
+  //List<String> favoritesQuotes = [];
 
   @override
   void initState() {
@@ -160,11 +160,11 @@ class _QuotesState extends State<Quotes> {
     });
   }
 
-  void addFavorite() {
-    setState(() {
-      favoritesQuotes.add(showQuote);
-    });
-  }
+  // void addFavorite() {
+  //   setState(() {
+  //     favoritesQuotes.add(showQuote);
+  //   });
+  // }
 
   Widget build(BuildContext context) {
     return Scaffold(

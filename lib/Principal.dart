@@ -25,6 +25,7 @@ class _PrincipalState extends State<Principal> {
     return Scaffold(
       body: screen[screenIndex],
       bottomNavigationBar: BottomNavigationBar(
+        //backgroundColor: Theme.of(context).primaryColor,
         selectedItemColor: const Color.fromRGBO(24, 123, 168, 1),
         unselectedItemColor: Colors.white54,
         showSelectedLabels: true,

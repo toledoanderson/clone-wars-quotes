@@ -49,7 +49,7 @@ class _InfoState extends State<Info> {
                         ),
                         const SizedBox(height: 10),
                         const Text(
-                          'Inspiring quotes for Clone Wars & Star Wars fans!',
+                          'The most inspiring quotes in the galaxy!',
                           textScaleFactor: 1.5,
                           textAlign: TextAlign.center,
                           style: TextStyle(
