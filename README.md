@@ -11,7 +11,8 @@ I am not a developer.
 This is my first try to make an app using Flutter - or any kind of code. 
 
 ## Screenshots
-![alt text: Screenshot 1](/images/screenshot_1.png) ![alt text: Screenshot 2](/images/screenshot_2.png) ![alt text: Screenshot 3](/images/screenshot_3.png)
+|---|---|---|
+| ![alt text: Screenshot 1](/images/screenshot_1.png) | ![alt text: Screenshot 2](/images/screenshot_2.png) | ![alt text: Screenshot 3](/images/screenshot_3.png) |
 
 
 ## Content used in the app
