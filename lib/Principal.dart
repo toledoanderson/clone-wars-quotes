@@ -1,4 +1,3 @@
-import 'package:clone_wars_quotes/Favorites.dart';
 import 'package:clone_wars_quotes/Info.dart';
 import 'package:clone_wars_quotes/Quotes.dart';
 import 'package:clone_wars_quotes/QuotesList.dart';
