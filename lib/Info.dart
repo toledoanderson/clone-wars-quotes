@@ -37,7 +37,6 @@ class _InfoState extends State<Info> {
                       children: [
                         Image.asset('images/logo.png', height: 100,
                         ),
-                        //Icon(Icons.rocket_launch_rounded, size: 50),
                         const SizedBox(height: 20),
                         const Text(
                           'Clone Wars Quotes',
@@ -120,7 +119,6 @@ class _InfoState extends State<Info> {
                 elevation: 0,
                 color: Theme.of(context).primaryColor,
                 child: const SizedBox(
-                  height: 330,
                   child: Column(
                     children: [
 

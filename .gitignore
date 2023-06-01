@@ -42,3 +42,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+lib/Favorites.dart
+lib/QuotesDB.dart
+lib/SingleQuote.dart
+lib/Settings.dart
