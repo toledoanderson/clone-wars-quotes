@@ -1,3 +1,4 @@
+import 'package:clone_wars_quotes/Favorites.dart';
 import 'package:clone_wars_quotes/Info.dart';
 import 'package:clone_wars_quotes/Quotes.dart';
 import 'package:clone_wars_quotes/QuotesList.dart';
@@ -13,48 +14,38 @@ class Principal extends StatefulWidget {
 class _PrincipalState extends State<Principal> {
   int screenIndex = 0;
   List screen = [
-    const Quotes(),
+    Quotes(),
     AllQuotes(),
-    const Info(),
+    Info(),
   ];
-
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: screen[screenIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color.fromRGBO(24, 123, 168, 0.15),
-        selectedItemColor: const Color.fromRGBO(24, 123, 168, 1),
-        unselectedItemColor: Colors.white54,
-        showSelectedLabels: true,
-        showUnselectedLabels: false,
-        iconSize: 30,
-        onTap: (index) {
-          setState(() {
-            screenIndex = index;
-          });
-        },
-        type: BottomNavigationBarType.fixed,
-        currentIndex: screenIndex,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.format_quote_rounded),
-            label: "Random",
-            activeIcon: Icon(Icons.format_quote_rounded),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.format_list_bulleted_rounded),
-            label: "All",
-            activeIcon: Icon(Icons.format_list_bulleted_rounded),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.info_outline_rounded),
-            label: "Info",
-            activeIcon: Icon(Icons.info_outline_rounded),
-          ),
-        ],
+      bottomNavigationBar: Card(
+        margin: EdgeInsets.fromLTRB(15, 10, 15, 10),
+        child: NavigationBar(
+          onDestinationSelected: (index) {
+            setState(() {
+              screenIndex = index;
+            });
+          },
+          selectedIndex: screenIndex,
+          backgroundColor: Colors.transparent,
+          indicatorColor: Color.fromRGBO(
+              24, 123, 168, 1), //Theme.of(context).highlightColor,
+          labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
+
+          destinations: [
+            NavigationDestination(
+                icon: Icon(Icons.format_quote_rounded), label: 'Random'),
+            NavigationDestination(
+                icon: Icon(Icons.format_list_bulleted_rounded), label: 'All'),
+            NavigationDestination(
+              icon: Icon(Icons.info_outline_rounded), label: 'Info'),
+          ],
+        ),
       ),
     );
   }

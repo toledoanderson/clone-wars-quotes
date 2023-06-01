@@ -156,7 +156,7 @@ class _AllQuotesState extends State<AllQuotes> {
         itemCount: quotesList.length,
           itemBuilder:  (context, index) {
           return Padding(
-            padding: const EdgeInsets.fromLTRB(8, 4, 8, 0),
+            padding: const EdgeInsets.fromLTRB(10, 4, 10, 0),
             child: Card(
               color: Theme.of(context).primaryColor,
               child: ListTile(

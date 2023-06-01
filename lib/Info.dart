@@ -27,7 +27,7 @@ class _InfoState extends State<Info> {
               padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
               child: Card(
                 elevation: 0,
-                color: const Color.fromRGBO(24, 123, 168, 0.8),
+                color: Color.fromRGBO(24, 123, 168, 0.3),
                 child: SizedBox(
                   height: 280,
                   child: Padding(
@@ -66,7 +66,7 @@ class _InfoState extends State<Info> {
               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: Card(
                 elevation: 0,
-                color: Theme.of(context).colorScheme.surfaceVariant,
+                color: Theme.of(context).primaryColor,
                 child: const SizedBox(
                   height: 80,
                   child: Center(
@@ -93,7 +93,7 @@ class _InfoState extends State<Info> {
               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: Card(
                 elevation: 0,
-                color: Theme.of(context).colorScheme.surfaceVariant,
+                color: Theme.of(context).primaryColor,
                 child: const SizedBox(
                   height: 80,
                   child: Center(
@@ -108,7 +108,7 @@ class _InfoState extends State<Info> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      subtitle: Text('0.1.3'),
+                      subtitle: Text('0.1.4'),
                     ),
                   ),
                 ),
@@ -118,7 +118,7 @@ class _InfoState extends State<Info> {
               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: Card(
                 elevation: 0,
-                color: Theme.of(context).colorScheme.surfaceVariant,
+                color: Theme.of(context).primaryColor,
                 child: const SizedBox(
                   height: 330,
                   child: Column(
@@ -142,6 +142,9 @@ class _InfoState extends State<Info> {
                         padding: EdgeInsets.fromLTRB(65, 10, 10, 10),
                         child: ListBody(
                           children: [
+                            Text('0.1.4 (2023.05.31)', style: TextStyle(fontWeight: FontWeight.bold),),
+                            Text('Navigation bar updated; Share button added.'),
+                            SizedBox(height: 15),
                             Text('0.1.3 (2023.05.29)', style: TextStyle(fontWeight: FontWeight.bold),),
                             Text('Scroll to next Quote implemented.'),
                             SizedBox(height: 15),
@@ -166,7 +169,7 @@ class _InfoState extends State<Info> {
               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: Card(
                 elevation: 0,
-                color: Theme.of(context).colorScheme.surfaceVariant,
+                color: Theme.of(context).primaryColor,
                 child: const SizedBox(
                   height: 100,
                   child: Center(
@@ -196,7 +199,7 @@ class _InfoState extends State<Info> {
               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: Card(
                 elevation: 0,
-                color: Theme.of(context).colorScheme.surfaceVariant,
+                color: Theme.of(context).primaryColor,
                 child: const SizedBox(
                   height: 80,
                   child:
@@ -226,7 +229,7 @@ class _InfoState extends State<Info> {
               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: Card(
                 elevation: 0,
-                color: Theme.of(context).colorScheme.surfaceVariant,
+                color: Theme.of(context).primaryColor,
                 child: const SizedBox(
                   height: 100,
                   child: Center(

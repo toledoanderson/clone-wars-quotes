@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 import 'dart:math';
 
 class Quotes extends StatefulWidget {
@@ -141,6 +142,7 @@ class _QuotesState extends State<Quotes> {
     "You can change who you are, but you cannot run from yourself.",
   ];
   String showQuote = '';
+  String tooltipEng = 'Share';
   //List<String> favoritesQuotes = [];
 
   @override
@@ -149,8 +151,7 @@ class _QuotesState extends State<Quotes> {
     randomQuote();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       showQuotesSnackBar();
-    }
-    );
+    });
   }
 
   void randomQuote() {
@@ -168,20 +169,11 @@ class _QuotesState extends State<Quotes> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Clone Wars Quotes',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
       body: PageView.builder(
           onPageChanged: (random) {
             randomQuote();
-
           },
           scrollDirection: Axis.vertical,
-
           itemCount: quotesList.length,
           itemBuilder: (context, index) {
             return Container(
@@ -201,31 +193,34 @@ class _QuotesState extends State<Quotes> {
                       textAlign: TextAlign.center,
                     ),
                     const Expanded(child: SizedBox()),
-
                   ],
                 ),
               ),
             );
-          }
-      ),
+          }),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Share.share('"'+showQuote+'" - Clone Wars Quotes');
+          },
+          tooltip: tooltipEng,
+          child: Icon(Icons.send_rounded)),
     );
   }
-
 
   void showQuotesSnackBar() {
     ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Icon(Icons.arrow_downward_rounded, color: Colors.white54,),
-          duration: Duration(milliseconds: 1500),
-          behavior: SnackBarBehavior.floating,
-          backgroundColor: Colors.transparent,
-          width: 250,
-          padding: EdgeInsets.all(15),
-          dismissDirection: DismissDirection.up,
-          
-          ),
-
+      const SnackBar(
+        content: Icon(
+          Icons.arrow_downward_rounded,
+          color: Colors.white54,
+        ),
+        duration: Duration(milliseconds: 1500),
+        behavior: SnackBarBehavior.floating,
+        backgroundColor: Colors.transparent,
+        width: 250,
+        padding: EdgeInsets.all(15),
+        dismissDirection: DismissDirection.up,
+      ),
     );
   }
-
 }
