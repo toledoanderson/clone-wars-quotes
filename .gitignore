@@ -46,3 +46,4 @@ lib/Favorites.dart
 lib/QuotesDB.dart
 lib/SingleQuote.dart
 lib/Settings.dart
+.vscode/launch.json

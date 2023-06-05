@@ -22,7 +22,7 @@ class _PrincipalState extends State<Principal> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: screen[screenIndex],
-      bottomNavigationBar: Card(
+      bottomNavigationBar: Card( 
         margin: EdgeInsets.fromLTRB(15, 10, 15, 10),
         child: NavigationBar(
           onDestinationSelected: (index) {
@@ -32,8 +32,7 @@ class _PrincipalState extends State<Principal> {
           },
           selectedIndex: screenIndex,
           backgroundColor: Colors.transparent,
-          indicatorColor: Color.fromRGBO(
-              24, 123, 168, 1), //Theme.of(context).highlightColor,
+          indicatorColor: Color.fromRGBO(24, 123, 168, 1),
           labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
 
           destinations: [

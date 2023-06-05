@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class AllQuotes extends StatefulWidget {
 
-
   AllQuotes({super.key});
 
   @override
@@ -10,6 +9,7 @@ class AllQuotes extends StatefulWidget {
 }
 
 class _AllQuotesState extends State<AllQuotes> {
+  // String quoteToShare = '';
   List<String> quotesList = [
     "Great leaders inspire greatness in others.",
     "Belief is not a matter of choice, but of conviction.",
@@ -143,6 +143,14 @@ class _AllQuotesState extends State<AllQuotes> {
   ];
 
   @override
+
+  // void shareQuote () {
+  //   int? indexShare = index;
+  //   setState(() {
+  //     quoteToShare = quotesList[indexShare];
+  //   });
+  // }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -160,11 +168,12 @@ class _AllQuotesState extends State<AllQuotes> {
             child: Card(
               color: Theme.of(context).primaryColor,
               child: ListTile(
+                //onTap: ,
                 leading: const Icon(Icons.format_quote_rounded),
                 title: Padding(
                   padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                   child: Text(quotesList[index],
-                  //textScaleFactor: 1.25,
+                  textScaleFactor: 1.25,
                   style: const TextStyle(
                     fontWeight: FontWeight.normal,
 
